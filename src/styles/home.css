@@ -1,0 +1,77 @@
+  
+  /* Left: Text Side */
+  .text-content {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Right: Image Side */
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+  }
+
+  
+.btn:focus, .btn:active {
+    outline: none !important;  /* Removes default outline */
+    box-shadow: none !important;  /* Removes Bootstrap focus glow */
+}
+
+@keyframes shake-pause {
+  0%, 100% { transform: translateY(0); }  /* No movement at start & end */
+  5%, 15%, 25% { transform: translateY(-5px); } /* Shake left */
+  10%, 20%, 30% { transform: translateY(5px); } /* Shake right */
+  35%, 100% { transform: translateY(0); } /* Stop shaking */
+}
+
+.shake-icon {
+  display: inline-block;
+  animation: shake-pause 5.5s infinite ease-in-out;
+}
+
+button{
+    border:none !important;
+    outline:none !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll !important; */
+  /* scroll-snap-type: y mandatory; */
+  scrollbar-width: none; /* Hides scrollbar on Firefox */
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* Hides scrollbar on Edge */
+  /* height: 100vh; */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/* Hide scrollbar for Webkit browsers */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+
+.section {
+  height: 100vh; /* Full-screen sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* scroll-snap-align: start; Snaps to the start of each section */
+}
