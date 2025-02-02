@@ -5,7 +5,6 @@ import "../styles/home.css"; // Import CSS for styling
 const Home = () => {
   return (
     <div className="h-100">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
         <div className="container">
             <section id="section1" className="justify-content-between section" style={{height: "90vh"}}>
                 <div className="d-flex flex-row align-items-center">
@@ -18,7 +17,7 @@ const Home = () => {
                             <a className="text-decoration-none" href="https://www.mzbtutors.com/michigan-mentors" target="_blank" rel="noopener noreferrer">Michigan Mentors</a>.
                         </p>
                         <p className="fs-5">
-                            I'm an aspiring software engineer interested in solving complex technical problems. I'm drawn to climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
+                            I'm an aspiring software engineer interested in solving complex technical problems. I'm interested in climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
                         </p>
                         <p className="fs-5">
                             In my free time, I love to <a className="text-decoration-none" href="https://www.goodreads.com/review/list/180977465-will-duggan?order=d&shelf=currently-reading" target="_blank" rel="noopener noreferrer">read</a>, 
@@ -37,7 +36,6 @@ const Home = () => {
                 
                 <div className="">
                     <button className="btn fs-3 shake-icon pt-3" onClick={() => scrollToSection("section2")}>
-                        {/* <p className='fs-5 mb-0 pb-0'>Languages</p> */}
                         <i className="bi bi-chevron-down"></i>
                     </button>
                 </div>
@@ -52,7 +50,7 @@ const Home = () => {
                         <SkillCard skill="C++" content="I've led a introductory C++ course at Michigan Mentors!" course_work="Data Structures and Algorithms (EECS 280/281)"/>
                         <SkillCard skill="C#" content="I work in a C# envrioment at Simio!"/>
                         <SkillCard skill="JavaScript" content="I created this website using React.JS!"/>
-                        <SkillCard skill="Python" content="As a software developer at Chitown Tutors, I created a custom autograding system!" course_work="Practical Data Science (EECS 398)"/>
+                        <SkillCard skill="Python" content="As a software developer at Chitown Tutors, I created a custom autograding system in Python!" course_work="Practical Data Science (EECS 398)"/>
                         <SkillCard skill="C" course_work="Computer Organization (EECS 370)"/>
                         <SkillCard skill="Go" course_work="Distributed Systems (EECS 491)"/>
                         <SkillCard skill="R" course_work="Statistics and Data Analysis (STATS 250)"/>
@@ -60,7 +58,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="pt-4">
+                <div className="pt-3">
                     <button className="btn fs-3" onClick={() => scrollToSection("section3")}>
                         <i className="bi bi-chevron-down shake-icon"></i>
                     </button>
@@ -73,13 +71,13 @@ const Home = () => {
                 <div>
                     <div className="row g-4">
                         {/* TODO: Pass in logos/icons */}
-                        <SkillCard skill="Blazor/ASP.NET Core" />
-                        <SkillCard skill="Pandas" />
-                        <SkillCard skill="Numpy" />
-                        <SkillCard skill="Bootstrap" />
+                        <SkillCard skill="Blazor/ASP.NET Core" content="I work in a C# Blazor/ASP.NET Core envrioment at Simio!"/>
+                        <SkillCard skill="Pandas" course_work="Practical Data Science (EECS 398)"/>
+                        <SkillCard skill="Numpy" course_work="Practical Data Science (EECS 398)"/>
+                        <SkillCard skill="Bootstrap" content="I have practice with Bootstrap at Simio. This website was also made using Bootstrap!"/>
                         <SkillCard skill="Git" />
                         <SkillCard skill="Visual Studio/VS Code" />
-                        <SkillCard skill="React.js" />
+                        <SkillCard skill="React.js" content="I created this website using React.JS!"/>
                         <SkillCard skill="Google Cloud" />
                     </div>
                 </div>

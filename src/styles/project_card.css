@@ -1,0 +1,46 @@
+.project-card {
+    height: 25vh;
+    width: 60vw;
+    outline: 3px solid #333533;
+    /* border: 3px solid #333533; */
+    /* background-color: ; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.underline-text {
+    text-decoration: underline !important;
+}
+
+.link {
+    align-self: flex-end; /* Aligns to the right */
+    margin-top: auto; /* Pushes item to the bottom */
+    font-size: 1.3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #333533;
+  }
+
+  .animated-underline {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .animated-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #333533;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .animated-underline:hover::after {
+    width: 100%;
+  }

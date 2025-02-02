@@ -1,0 +1,23 @@
+/* SVG Styling */
+.vertical-swirl-line {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .vertical-swirl-line path {
+    stroke-dasharray: 300; /* Total length of the line */
+    stroke-dashoffset: 300; /* Start with line hidden */
+    animation: draw-line 2s ease-out forwards; /* Draw the line over 2 seconds */
+  }
+
+  .line {
+    transition: stroke-dashoffset 2s ease-out; /* Smooth animation */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes draw-line {
+    to {
+      stroke-dashoffset: 0; /* Draw the full line */
+    }
+  }
+  
