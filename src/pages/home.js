@@ -1,5 +1,9 @@
-import SkillCard from '../components/skill_card'
+// import SkillCard from '../components/skill_card'
 import MyImage from '../img/IMG_1795.jpeg'
+import MyImage1 from '../img/IMG_2229.JPG'
+import MyImage2 from '../img/IMG_2351.JPG'
+import MyImage3 from '../img/IMG_2244.JPG'
+
 import "../styles/home.css"; // Import CSS for styling
 
 const Home = () => {
@@ -17,20 +21,12 @@ const Home = () => {
                             <a className="text-decoration-none" href="https://www.mzbtutors.com/michigan-mentors" target="_blank" rel="noopener noreferrer">Michigan Mentors</a>.
                         </p>
                         <p className="fs-5">
-                            I'm an aspiring software engineer interested in solving complex technical problems. I'm interested in climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
-                        </p>
-                        <p className="fs-5">
-                            In my free time, I love to <a className="text-decoration-none" href="https://www.goodreads.com/review/list/180977465-will-duggan?order=d&shelf=currently-reading" target="_blank" rel="noopener noreferrer">read</a>, 
-                            &nbsp;<a className="text-decoration-none" href="https://open.spotify.com/user/31rtepq6ewbrsn7ozgk2yc4e2gei?si=21c97437b0dc47af" target="_blank" rel="noopener noreferrer">listen to music</a>, attempt to&nbsp;
-                            <a className="text-decoration-none" href="https://www.songsterr.com/a/wsa/dire-straits-down-to-the-waterline-tab-s30094" target="_blank" rel="noopener noreferrer">play the guitar</a>, travel, spend time outdoors, and play sports!
-                        </p>
-                        <p className="fs-5">
-                            Feel free to contact me at <a className="text-decoration-none" href="mailto:wkduggan@umich.edu">wkduggan@umich.edu</a>!
+                            Some parts of this website are still being worked on but feel free to explore it in the meantime! This site was made in React.js.
                         </p>
                     </div>
 
                     <div className="image-content mt-5 ms-4 flex-item">
-                        <img src={MyImage} alt="Headshot" width="90%" />
+                        <img src={MyImage} alt="" width="90%" />
                     </div>
                 </div>
                 
@@ -42,11 +38,32 @@ const Home = () => {
             </section>
 
             <section id="section2" className="justify-content-between section">
-                <h2 className="pt-5">Languages</h2>
+                <div className="d-flex flex-row align-items-center pt-5">
+                    <div className="text-content flex-item mt-5">
+                        <h1>About Me</h1>
+                        <p className="fs-5">
+                            I'm an aspiring software engineer interested in solving complex technical problems. I'm interested in climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
+                        </p>
+                        <p className="fs-5">
+                            In my free time, I love to <a className="text-decoration-none" href="https://www.goodreads.com/review/list/180977465-will-duggan?order=d&shelf=currently-reading" target="_blank" rel="noopener noreferrer">read</a>, 
+                            &nbsp;<a className="text-decoration-none" href="https://open.spotify.com/user/31rtepq6ewbrsn7ozgk2yc4e2gei?si=21c97437b0dc47af" target="_blank" rel="noopener noreferrer">listen to music</a>, attempt to&nbsp;
+                            <a className="text-decoration-none" href="https://www.songsterr.com/a/wsa/dire-straits-down-to-the-waterline-tab-s30094" target="_blank" rel="noopener noreferrer">play the guitar</a>, travel, spend time outdoors, and play hockey!
+                        </p>
+                        <p className="fs-5">
+                            Feel free to contact me at <a className="text-decoration-none" href="mailto:wkduggan@umich.edu">wkduggan@umich.edu</a>!
+                        </p>
+                    </div>
+
+                    <div className="layered-image">
+                        <img src={MyImage1} alt="" className="img img1"/>
+                        <img src={MyImage2} alt="" className="img img2"/>
+                        <img src={MyImage3} alt="" className="img img3"/>
+                    </div>
+                </div>
+                {/* <h2 className="pt-5">Languages</h2>
 
                 <div>
                     <div className="row g-4">
-                        {/* TODO: Pass in logos/icons */}
                         <SkillCard skill="C++" content="I've led a introductory C++ course at Michigan Mentors!" course_work="Data Structures and Algorithms (EECS 280/281)"/>
                         <SkillCard skill="C#" content="I work in a C# envrioment at Simio!"/>
                         <SkillCard skill="JavaScript" content="I created this website using React.JS!"/>
@@ -62,15 +79,14 @@ const Home = () => {
                     <button className="btn fs-3" onClick={() => scrollToSection("section3")}>
                         <i className="bi bi-chevron-down shake-icon"></i>
                     </button>
-                </div>
+                </div> */}
             </section>
             
-            <section id="section3" className="justify-content-between section">
+            {/* <section id="section3" className="justify-content-between section">
                 <h2 className="pt-5">Frameworks, Libraries, Technologies</h2>
 
                 <div>
                     <div className="row g-4">
-                        {/* TODO: Pass in logos/icons */}
                         <SkillCard skill="Blazor/ASP.NET Core" content="I work in a C# Blazor/ASP.NET Core envrioment at Simio!"/>
                         <SkillCard skill="Pandas" course_work="Practical Data Science (EECS 398)"/>
                         <SkillCard skill="Numpy" course_work="Practical Data Science (EECS 398)"/>
@@ -82,13 +98,13 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* <div className="pt-4">
+                <div className="pt-4">
                     <button className="btn fs-3" onClick={() => scrollToSection("section4")}>
                         <i className="bi bi-chevron-down shake-icon"></i>
                     </button>
-                </div> */}
+                </div>
                 <div></div>
-            </section>
+            </section> */}
         </div>
     </div>
     

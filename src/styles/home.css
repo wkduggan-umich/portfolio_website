@@ -67,11 +67,32 @@ button{
   display: none;
 }
 
-
 .section {
   height: 100vh; /* Full-screen sections */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* scroll-snap-align: start; Snaps to the start of each section */
+}
+
+.layered-image {
+  position: relative;
+  width: 50%;
+}
+
+.img {
+  position: relative;
+  width: 50%;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+.img1 {
+  top: 0;
+  left: 0;
+}
+.img2 {
+  top: 100px;  /* Adjust vertical offset */
+  left: -30px; /* Adjust horizontal offset */
+}
+.img3 {
+  top: -10px;  /* Adjust vertical offset */
+  left: 70px;  /* Adjust horizontal offset */
 }

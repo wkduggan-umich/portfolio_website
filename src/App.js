@@ -3,10 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap styles
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './pages/home'
-import Contact from './pages/contact'
 import Projects from './pages/projects'
-import Footer from './components/footer'
-import Project1 from './pages/projects/project1';
+import Windmill from './pages/projects/windmill'
+import Autograder from './pages/projects/autograder'
+import MNIST from './pages/projects/mnist'
+import PersonalPortfolio from './pages/projects/peronsal-portfolio'
+import MMCPP from './pages/projects/mm-cpp'
 
 export default function MyApp() {
   return (
@@ -16,11 +18,12 @@ export default function MyApp() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/project1" element={<Project1 />} />
-
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/projects/mnist" element={<MNIST />} />
+          <Route path="/projects/personal-portfolio" element={<PersonalPortfolio />} />
+          <Route path="/projects/hsat-autograder" element={<Autograder />} />
+          <Route path="/projects/michigan-mentors-cpp" element={<MMCPP />} />
+          <Route path="/projects/windmill" element={<Windmill />} />
         </Routes>
-        {/* <Footer /> */}
       </div>
     </Router>
   );
