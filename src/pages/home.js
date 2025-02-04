@@ -21,7 +21,7 @@ const Home = () => {
                             <a className="text-decoration-none" href="https://www.mzbtutors.com/michigan-mentors" target="_blank" rel="noopener noreferrer">Michigan Mentors</a>.
                         </p>
                         <p className="fs-5">
-                            Some parts of this website are still being worked on but feel free to explore it in the meantime! This site was made in React.js.
+                            Some parts of this website are still being worked on but feel free to explore it in the meantime!
                         </p>
                     </div>
 
@@ -42,7 +42,7 @@ const Home = () => {
                     <div className="text-content flex-item mt-5">
                         <h1>About Me</h1>
                         <p className="fs-5">
-                            I'm an aspiring software engineer interested in solving complex technical problems. I'm interested in climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
+                            I'm an aspiring software engineer interested in solving complex technical problems. Some of my specific interests include climate tech, cybersecurity, educational tech, and more. I love to work in collaborative teams and to get my head in the weeds!
                         </p>
                         <p className="fs-5">
                             In my free time, I love to <a className="text-decoration-none" href="https://www.goodreads.com/review/list/180977465-will-duggan?order=d&shelf=currently-reading" target="_blank" rel="noopener noreferrer">read</a>, 
